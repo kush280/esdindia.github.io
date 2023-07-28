@@ -20,6 +20,38 @@
             <a href="about.html" style="padding: 20px;">About</a>
             <a href="contact.html" style="padding: 20px;">Contact</a>
         </nav>
-        
+
+        <div class="image-container">
+            <img src="C:\Users\kusha\Desktop\ESD Git\Photos\sneha.png" alt="Image 1" />
+            <img src="C:\Users\kusha\Desktop\ESD Git\Photos\vikrant.jpg" alt="Image 2" />
+          </div>
+          <div class="buttons">
+            <button class="button">Previous</button>
+            <button class="button active">1</button>
+            <button class="button">2</button>
+            <button class="button">Next</button>
+          </div>
+          <script>
+          var image_index = 0;
+          function changeImage() {
+            image_index = (image_index + 1) % 3;
+            var image = document.querySelector(".image");
+            image.src = "image" + image_index + ".jpg";
+          }
+          
+          document.querySelector(".button.previous").addEventListener("click", function() {
+            changeImage();
+          });
+          
+          document.querySelector(".button.next").addEventListener("click", function() {
+            changeImage();
+          });
+          </script>
+
+<br>
+<br>
+<footer>
+<b text-align="left">By :</b>&nbsp Kushagra Sxaena<br><b text-align="right">ESD :</b>&nbsp Btach 1
+</footer>
 </body>
 </html>

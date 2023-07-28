@@ -24,3 +24,6 @@ footer {
     font-size: medium;
     color: whitesmoke;
 }  
+img {
+  border-radius: 5px;
+}
