@@ -17,6 +17,11 @@ body {
   nav a:hover {
     background-color: #ddd;
   }
+  #Download {
+    width: 30px ;
+    height: 20px;
+    
+}
   
 footer {
     background-color: black;
